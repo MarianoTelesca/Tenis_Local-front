@@ -12,9 +12,9 @@ export default function PerfilJugadorDerecha() {
     return (
         <>
 
-            {/* ================= COLUMNA IZQUIERDA: PERFIL Y LOGROS (col-lg-3) ================= */}
+            {/***** COLUMNA IZQUIERDA *****/}
             <aside className="col-lg-3 col-md-4 mb-4">
-            {/* Tarjeta de Perfil Principal */}
+            {/* Perfil */}
             <div className="card border-0 shadow-sm p-4 bg-white rounded-4 mb-4 text-center text-md-start">
                 <div className="d-flex flex-column align-items-center text-center mb-3">
                 <img src="https://via.placeholder.com/100" alt="Nombre Apellido" className="rounded-circle object-fit-cover mb-3" style={{ width: '90px', height: '90px' }} />
@@ -74,7 +74,7 @@ export default function PerfilJugadorDerecha() {
                 </div>
             </div>
 
-            {/* Insignias / Logros */}
+            {/* Logros */}
             <div className="card border-0 shadow-sm p-4 bg-white rounded-4">
                 <h5 className="fw-bold mb-3">Insignias</h5>
                 <div className="row g-2 text-center text-muted" style={{ fontSize: '0.75rem' }}>

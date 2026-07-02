@@ -25,19 +25,12 @@ export default function Menu() {
 
             <div className="collapse navbar-collapse" id="navbarScroll">
                 
-                {/* ENLACES CENTRALES (Iguales a la imagen) */}
                 <ul className="navbar-nav mx-auto my-2 my-lg-0 gap-3 text-center">
                     <li className="nav-item">
-                    <Link className="nav-link text-secondary small fw-semibold" to="#">Canchas</Link>
+                    <Link className="nav-link text-secondary small fw-semibold" to="/busqueda_canchas">Canchas</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link text-secondary small fw-semibold" to="#">Jugadores</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link className="nav-link text-secondary small fw-semibold" to="#">Partidos</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link className="nav-link text-secondary small fw-semibold" to="#">Reservas</Link>
+                    <Link className="nav-link text-secondary small fw-semibold" to="/partidos">Partidos</Link>
                     </li>
                 </ul>
                 

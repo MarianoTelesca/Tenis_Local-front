@@ -10,9 +10,9 @@ export default function PerfilJugadorDerecha() {
 
   return (
     <>
-      {/* ================= COLUMNA DERECHA: ESTADÍSTICAS Y CONTENIDO (col-lg-9) ================= */}
+      {/***** COLUMNA DERECHA ******/}
       <main className="col-lg-9 col-md-8 mb-4">
-        {/* Fila de Estadísticas Rápidas */}
+        {/* Estadísticas */}
         <div className="card border-0 shadow-sm p-4 bg-white rounded-4 mb-4">
           <div className="row text-center">
           <div className="col-3 border-end">
@@ -67,7 +67,7 @@ export default function PerfilJugadorDerecha() {
           </div>
         </div>
 
-        {/* Reseñas de Jugadores */}
+        {/* Reviews */}
         <div className="card border-0 shadow-sm p-4 bg-white rounded-4 mb-4">
             <h5 className="fw-bold mb-3">Reseñas de Jugadores</h5>
             <div className="d-flex flex-column gap-3">
@@ -87,7 +87,7 @@ export default function PerfilJugadorDerecha() {
             </div>
         </div>
 
-        {/* Historial de Actividad */}
+        {/* Historial */}
         <div className="card border-0 shadow-sm p-4 bg-white rounded-4">
             <h5 className="fw-bold mb-3">Flujo de Actividad</h5>
             <ul className="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
