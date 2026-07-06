@@ -133,33 +133,6 @@ export default function ReservarCancha() {
                 </div>
             </div>
 
-            {/* Método de Pago */}
-            <div className="card border-0 shadow-sm p-4 bg-white rounded-4">
-                <h5 className="fw-bold mb-3">Método de Pago</h5>
-                <p className="text-muted small mb-3">Seleccioná cómo preferís abonar tu turno:</p>
-                
-                <div className="row g-2">
-                <div className="col-md-6">
-                    <div className="p-3 border rounded-4 bg-light border-dark d-flex align-items-center gap-3 style-clickable">
-                    <input type="radio" name="metodoPago" id="pagoClub" defaultChecked />
-                    <label htmlFor="pagoClub" className="fw-bold text-dark pointer m-0">
-                        💵 Pagar en el Club
-                        <span className="d-block text-muted fw-normal small" style={{ fontSize: '0.75rem' }}>Efectivo, Débito o QR en la recepción.</span>
-                    </label>
-                    </div>
-                </div>
-                <div className="col-md-6">
-                    <div className="p-3 border rounded-4 bg-white d-flex align-items-center gap-3 style-clickable" style={{ opacity: 0.8 }}>
-                    <input type="radio" name="metodoPago" id="pagoBilletera" />
-                    <label htmlFor="pagoBilletera" className="fw-bold text-dark pointer m-0">
-                        📱 Mercado Pago / Transferencia
-                        <span className="d-block text-muted fw-normal small" style={{ fontSize: '0.75rem' }}>Se genera un alias/link de pago inmediato.</span>
-                    </label>
-                    </div>
-                </div>
-                </div>
-            </div>
-
             </div>
 
             {/***** COLUMNA DERECHA *****/}
@@ -170,22 +143,41 @@ export default function ReservarCancha() {
                 
                 {/* Detalles */}
                 <div className="pb-3 border-bottom mb-3 small">
-                <span className="fw-bold text-dark d-block">Centro de Tenis Palermo</span>
-                <span className="text-muted">Av. del Libertador 4200, CABA</span>
+                    <span className="fw-bold text-dark d-block">Centro de Tenis Palermo</span>
+                    <span className="text-muted">Av. del Libertador 4200, CABA</span>
+                    </div>
+
+                    <div className="d-flex flex-column gap-2 small pb-3 border-bottom mb-3 text-muted">
+                    <div className="d-flex justify-content-between">
+                        <span>Cancha 1 (Polvo de Ladrillo) — 1 hr</span>
+                        <span className="fw-semibold text-dark">$15.000</span>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                        <span>Tubo de Pelotas (Dunlop)</span>
+                        <span className="fw-semibold text-dark">$3.500</span>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                        <span>Gastos de gestión / Reserva online</span>
+                        <span className="fw-semibold text-dark">$500</span>
+                    </div>
                 </div>
 
-                <div className="d-flex flex-column gap-2 small pb-3 border-bottom mb-3 text-muted">
-                <div className="d-flex justify-content-between">
-                    <span>Cancha 1 (Polvo de Ladrillo) — 1 hr</span>
-                    <span className="fw-semibold text-dark">$15.000</span>
-                </div>
-                <div className="d-flex justify-content-between">
-                    <span>Tubo de Pelotas (Dunlop)</span>
-                    <span className="fw-semibold text-dark">$3.500</span>
-                </div>
-                <div className="d-flex justify-content-between">
-                    <span>Gastos de gestión / Reserva online</span>
-                    <span className="fw-semibold text-dark">$500</span>
+                {/* SECCIÓN INTEGRADAS DE FORMA DE PAGO */}
+                <div className="mb-4">
+                <label className="form-label text-muted small fw-semibold text-uppercase" style={{ fontSize: '0.7rem' }}>Forma de pago</label>
+                <div className="d-flex flex-column gap-2">
+                    <div className="p-2 border rounded-3 d-flex align-items-center gap-2 bg-light bg-opacity-50" style={{ fontSize: '0.85rem' }}>
+                    <input type="radio" name="formaPagoResumen" id="pagoClubResumen" defaultChecked />
+                    <label htmlFor="pagoClubResumen" className="pointer m-0 text-dark fw-semibold">
+                        💵 Efectivo / Débito en el Club
+                    </label>
+                    </div>
+                    <div className="p-2 border rounded-3 d-flex align-items-center gap-2" style={{ fontSize: '0.85rem' }}>
+                    <input type="radio" name="formaPagoResumen" id="pagoTransfResumen" />
+                    <label htmlFor="pagoTransfResumen" className="pointer m-0 text-dark fw-semibold">
+                        📱 Transferencia / Mercado Pago
+                    </label>
+                    </div>
                 </div>
                 </div>
 

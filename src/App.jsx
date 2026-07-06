@@ -13,6 +13,7 @@ import DetalleCancha from './pages/DetalleCancha'
 import BusquedaCanchas from './pages/BusquedaCanchas'
 import ReservarCancha from './pages/ReservarCancha'
 import Partidos from './pages/Partidos'
+import PerfilClub from './pages/PerfilClub'
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
           <Menu/>
           <Routes>
             <Route exact path="/" element={<Index />} />
-            <Route exact path="/perfil" element={<PerfilJugador />} />
+            <Route exact path="/perfil_jugador" element={<PerfilJugador />} />
+            <Route exact path="/perfil_club" element={<PerfilClub />} />
             <Route exact path="/detalle_cancha" element={<DetalleCancha />} />
             <Route exact path="/busqueda_canchas" element={<BusquedaCanchas />} />
             <Route exact path="/reservar_cancha" element={<ReservarCancha />} />

@@ -38,7 +38,7 @@ export default function Menu() {
                 <div className="d-flex justify-content-center align-items-center gap-3 mt-2 mt-lg-0">
                     <Link 
                     className="nav-link text-secondary small fw-semibold px-2" 
-                    to="/perfil"
+                    to="/perfil_jugador"
                     >
                     Log in
                     </Link>
